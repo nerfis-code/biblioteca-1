@@ -11,12 +11,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Main CSS-->
-	<link href="<?php echo base_url; ?>Assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="<?php echo base_url; ?>Assets/css/datatables.min.css" rel="stylesheet" crossorigin="anonymous" />
     <link href="<?php echo base_url; ?>Assets/css/select2.min.css" rel="stylesheet" />
     <link href="<?php echo base_url; ?>Assets/css/main.css" rel="stylesheet" />
 	<link href="<?php echo base_url; ?>Assets/css/estilos.css" rel="stylesheet" />
 	<link href="<?php echo base_url; ?>Assets/css/style.css" rel="stylesheet" />
+	
     
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url; ?>Assets/css/font-awesome.min.css">
@@ -69,7 +69,7 @@
                 <div class="navbar-nav w-100">
                     <a href="<?php echo base_url; ?>Configuracion/admin" class="nav-item nav-link active"><i class="bi bi-archive"></i>Tabla</a>
                     <div class="treeview">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="treeview"> <i class="fa fa-laptop me-2"></i>Libros<i class="treeview-indicator fa fa-angle-right"></i></a>
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="treeview"> <i class="fa fa-laptop me-2"></i>Libros</a>
                         <div class="treeview-menu">
                             <a href="<?php echo base_url; ?>Autor" class="dropdown-item">Autor</a>
                             <a href="<?php echo base_url; ?>Editorial" class="dropdown-item">Editorial</a>
@@ -80,14 +80,14 @@
                     <a href="<?php echo base_url; ?>Estudiantes" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Lectores</a>
                     <a href="<?php echo base_url; ?>Materia" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Generos</a>
                     <div class="treeview">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="treeview"> <i class="app-menu__icon fa fa-wrench"></i>Administración<i class="treeview-indicator fa fa-angle-right"></i></a>
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="treeview"> <i class="app-menu__icon fa fa-wrench"></i>Administración</a>
                         <div class="treeview-menu">
                             <a class="dropdown-item" href="<?php echo base_url; ?>Usuarios"><i class="icon fa fa-user-o"></i> Usuarios</a>
                             <a class="dropdown-item" href="<?php echo base_url; ?>Configuracion"><i class="icon fa fa-cogs"></i> Configuración</a>
                         </div>
                     </div>
                     <div class="treeview">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="treeview"> <i class="far fa-file-alt me-2"></i>Reportes<i class="treeview-indicator fa fa-angle-right"></i></a>
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="treeview"> <i class="far fa-file-alt me-2"></i>Reportes</a>
                         <div class="treeview-menu">
                             <a href="<?php echo base_url; ?>Prestamos/pdf" class="dropdown-item">Libros Prestados</a>
                         </div>

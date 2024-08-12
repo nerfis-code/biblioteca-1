@@ -1,11 +1,13 @@
 /********** Template CSS **********/
 :root {
-    --primary: #EB1616;
-    --secondary: #191C24;
-    --light: #6C7293;
+    --primary: #6c788e;
+    --secondary: #ededf2;
+    --light: #fcfdff;
     --dark: #000000;
 }
-
+.bg-secondary{
+    background-color: var(--secondary);
+}
 .back-to-top {
     position: fixed;
     display: none;
@@ -78,8 +80,9 @@
 
 .content {
     margin-left: 270px;
+    margin-right: 10px;
     min-height: 100vh;
-    background: var(--dark);
+    background: var(--light);
     transition: 0.5s;
 }
 
@@ -93,7 +96,7 @@
     }
 
     .content {
-        width: calc(97% - 270px);
+        width: calc(90% - 270px);
     }
 
     .content.open {
@@ -121,7 +124,6 @@
 /*** Navbar ***/
 .sidebar .navbar .navbar-nav .nav-link {
     padding: 7px 20px;
-    color: var(--light);
     font-weight: 500;
     border-left: 3px solid var(--secondary);
     border-radius: 0 30px 30px 0;
@@ -131,7 +133,7 @@
 .sidebar .navbar .navbar-nav .nav-link:hover,
 .sidebar .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
-    background: var(--dark);
+    background: var(--light);
     border-color: var(--primary);
 }
 
@@ -141,7 +143,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: var(--dark);
+    margin-right: 0.8rem;
     border-radius: 40px;
 }
 
@@ -158,12 +160,12 @@
 .sidebar .navbar .dropdown-item {
     padding-left: 25px;
     border-radius: 0 30px 30px 0;
-    color: var(--light);
+    color: #6c788e;
 }
 
 .sidebar .navbar .dropdown-item:hover,
 .sidebar .navbar .dropdown-item.active {
-    background: var(--dark);
+    background: var(--light);
 }
 
 .content .navbar .navbar-nav .nav-link {
@@ -185,7 +187,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: var(--dark);
+    background: var(--light);
     border-radius: 40px;
 }
 
@@ -195,7 +197,7 @@
 
 .content .navbar .dropdown-item:hover,
 .content .navbar .dropdown-item.active {
-    background: var(--dark);
+    background: var(--light);
 }
 
 .content .navbar .dropdown-toggle::after {
@@ -274,6 +276,6 @@
 }
 
 .testimonial-carousel .owl-dot.active {
-    background: var(--dark);
+    background: var(--light);
     border-color: var(--primary);
 }

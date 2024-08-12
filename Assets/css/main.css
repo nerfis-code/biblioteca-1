@@ -25,8 +25,8 @@
   --white: #FFF;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #EB1616;
-  --secondary: #191C24;
+  --primary: #6c788e;
+  --secondary: #ededf2;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -65,9 +65,9 @@ body {
   font-family: "Open Sans",sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
-  color: #6C7293;
+  color: #000;
   text-align: left;
-  background-color: #000;
+  background-color: var(--white);
 }
 
 [tabindex="-1"]:focus {
@@ -182,9 +182,6 @@ a {
   background-color: transparent;
 }
 
-a:hover {
-  color: #bd2130;
-}
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -340,7 +337,7 @@ legend {
   font-size: 1.5rem;
   line-height: inherit;
   color: inherit;
-  white-space: normal;
+  gray-dark-space: normal;
 }
 
 progress {
@@ -1684,7 +1681,7 @@ pre code {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: white;
+  color: gray-dark;
 }
 
 .table th,
@@ -1892,11 +1889,6 @@ pre code {
   background-color: #ececf6;
 }
 
-.table-dark,
-.table-dark > th,
-.table-dark > td {
-  background-color: #c6c8ca;
-}
 
 .table-dark th,
 .table-dark td,
@@ -1941,10 +1933,7 @@ pre code {
   border-color: #dee2e6;
 }
 
-.table-dark {
-  color: #FFF;
-  background-color: #343a40;
-}
+
 
 .table-dark th,
 .table-dark td,
@@ -3283,7 +3272,7 @@ input[type="button"].btn-block {
 }
 
 .dropdown-toggle {
-  white-space: nowrap;
+  gray-dark-space: nowrap;
 }
 
 .dropdown-toggle::after {
@@ -3481,7 +3470,7 @@ input[type="button"].btn-block {
   font-weight: 400;
   color: #212529;
   text-align: inherit;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
   background-color: transparent;
   border: 0;
 }
@@ -3524,7 +3513,7 @@ input[type="button"].btn-block {
   margin-bottom: 0;
   font-size: 0.765625rem;
   color: #6c757d;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
 }
 
 .dropdown-item-text {
@@ -3801,7 +3790,7 @@ input[type="button"].btn-block {
   line-height: 1.5;
   color: #495057;
   text-align: center;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
   background-color: #e9ecef;
   border: 2px solid #ced4da;
   border-radius: 4px;
@@ -4492,7 +4481,7 @@ input[type="button"].btn-block {
   margin-right: 1rem;
   font-size: 1.09375rem;
   line-height: inherit;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -4860,13 +4849,8 @@ input[type="button"].btn-block {
   color: #FFF;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
-}
 
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
-}
+
 
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
@@ -5306,7 +5290,7 @@ input[type="button"].btn-block {
   font-weight: 700;
   line-height: 1;
   text-align: center;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
   -webkit-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s cubic-bezier(0.35, 0, 0.25, 1), -webkit-transform 0.2s cubic-bezier(0.35, 0, 0.25, 1);
@@ -5672,7 +5656,7 @@ a.badge-dark:focus, a.badge-dark.focus {
           justify-content: center;
   color: #FFF;
   text-align: center;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
   background-color: #009688;
   -webkit-transition: width 0.6s ease;
   -o-transition: width 0.6s ease;
@@ -6397,7 +6381,7 @@ a.close.disabled {
   letter-spacing: normal;
   word-break: normal;
   word-spacing: normal;
-  white-space: normal;
+  gray-dark-space: normal;
   line-break: auto;
   font-size: 0.765625rem;
   word-wrap: break-word;
@@ -6510,7 +6494,7 @@ a.close.disabled {
   letter-spacing: normal;
   word-break: normal;
   word-spacing: normal;
-  white-space: normal;
+  gray-dark-space: normal;
   line-break: auto;
   font-size: 0.765625rem;
   word-wrap: break-word;
@@ -7052,7 +7036,7 @@ button.bg-dark:focus {
   background-color: #1d2124 !important;
 }
 
-.bg-white {
+.bg-gray-dark {
   background-color: #FFF !important;
 }
 
@@ -7132,7 +7116,7 @@ button.bg-dark:focus {
   border-color: #343a40 !important;
 }
 
-.border-white {
+.border-gray-dark {
   border-color: #FFF !important;
 }
 
@@ -8386,7 +8370,7 @@ button.bg-dark:focus {
   padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
+  gray-dark-space: nowrap;
   border: 0;
 }
 
@@ -8396,7 +8380,7 @@ button.bg-dark:focus {
   height: auto;
   overflow: visible;
   clip: auto;
-  white-space: normal;
+  gray-dark-space: normal;
 }
 
 .shadow-sm {
@@ -8737,6 +8721,7 @@ button.bg-dark:focus {
 
 .p-4 {
   padding: 1.5rem !important;
+  margin-bottom: 0.5rem;
 }
 
 .pt-4,
@@ -10316,18 +10301,18 @@ button.bg-dark:focus {
 }
 
 .text-wrap {
-  white-space: normal !important;
+  gray-dark-space: normal !important;
 }
 
 .text-nowrap {
-  white-space: nowrap !important;
+  gray-dark-space: nowrap !important;
 }
 
 .text-truncate {
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
 }
 
 .text-left {
@@ -10426,12 +10411,12 @@ button.bg-dark:focus {
   font-style: italic !important;
 }
 
-.text-white {
+.text-gray-dark {
   color: #FFF !important;
 }
 
 .text-primary {
-  color: #009688 !important;
+  color: var(--primary) !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10506,7 +10491,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.text-white-50 {
+.text-gray-dark-50 {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
@@ -10554,7 +10539,7 @@ a.text-dark:hover, a.text-dark:focus {
     content: " (" attr(title) ")";
   }
   pre {
-    white-space: pre-wrap !important;
+    gray-dark-space: pre-wrap !important;
   }
   pre,
   blockquote {
@@ -10639,7 +10624,7 @@ table.dataTable th.dataTables_empty {
 
 table.dataTable.nowrap th,
 table.dataTable.nowrap td {
-  white-space: nowrap;
+  gray-dark-space: nowrap;
 }
 
 .tile div.dataTables_wrapper {
@@ -10649,7 +10634,7 @@ table.dataTable.nowrap td {
 div.dataTables_wrapper div.dataTables_length label {
   font-weight: normal;
   text-align: left;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
 }
 
 div.dataTables_wrapper div.dataTables_length select {
@@ -10663,7 +10648,7 @@ div.dataTables_wrapper div.dataTables_filter {
 
 div.dataTables_wrapper div.dataTables_filter label {
   font-weight: normal;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
   text-align: left;
 }
 
@@ -10675,18 +10660,18 @@ div.dataTables_wrapper div.dataTables_filter input {
 
 div.dataTables_wrapper div.dataTables_info {
   padding-top: 0.85em;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
 }
 
 div.dataTables_wrapper div.dataTables_paginate {
   margin: 0;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
   text-align: right;
 }
 
 div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   margin: 2px 0;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -11797,7 +11782,7 @@ body.stop-scrolling {
 }
 
 .sweet-alert {
-  background-color: white;
+  background-color: gray-dark;
   width: 478px;
   padding: 20px;
   border-radius: 3px;
@@ -11883,7 +11868,7 @@ body.stop-scrolling {
   height: 24px;
   border-radius: 50%;
   background-color: #ea7d7d;
-  color: white;
+  color: gray-dark;
   line-height: 24px;
   text-align: center;
   margin-right: 3px;
@@ -11989,7 +11974,7 @@ body.stop-scrolling {
 
 .sweet-alert button {
   background-color: #009688 !important;
-  color: white;
+  color: gray-dark;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -12172,7 +12157,7 @@ body.stop-scrolling {
   position: absolute;
   width: 60px;
   height: 120px;
-  background: white;
+  background: gray-dark;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
       transform: rotate(45deg);
@@ -12219,7 +12204,7 @@ body.stop-scrolling {
 .sweet-alert .sa-icon.sa-success .sa-fix {
   width: 5px;
   height: 90px;
-  background-color: white;
+  background-color: gray-dark;
   position: absolute;
   left: 28px;
   top: 8px;
@@ -12808,7 +12793,7 @@ body.stop-scrolling {
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
 }
 
 .select2-container .select2-selection--single .select2-selection__clear {
@@ -12838,7 +12823,7 @@ body.stop-scrolling {
   padding-left: 8px;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
 }
 
 .select2-container .select2-search--inline {
@@ -12859,7 +12844,7 @@ body.stop-scrolling {
 }
 
 .select2-dropdown {
-  background-color: white;
+  background-color: gray-dark;
   border: 2px solid #ced4da;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
@@ -13024,7 +13009,7 @@ body.stop-scrolling {
 }
 
 .select2-container--default .select2-selection--multiple {
-  background-color: white;
+  background-color: gray-dark;
   border: 2px solid #ced4da;
   border-radius: 4px;
   cursor: text;
@@ -13189,7 +13174,7 @@ body.stop-scrolling {
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   background-color: #009688;
-  color: white;
+  color: gray-dark;
 }
 
 .select2-container--default .select2-results__group {
@@ -13239,7 +13224,7 @@ body.stop-scrolling {
   display: none;
   border-radius: 3px;
   background: #292929;
-  color: white;
+  color: gray-dark;
   font-family: sans-serif, Verdana;
   font-size: smaller;
   padding: 3px;
@@ -13251,7 +13236,7 @@ body.stop-scrolling {
   border-radius: 3px;
   background: #000000;
   padding: 3px;
-  color: white;
+  color: gray-dark;
   width: 18px;
   height: 18px;
   cursor: pointer;
@@ -13447,7 +13432,7 @@ NOTE: use percentage font sizes or else old IE chokes
   font-size: 13px;
   /* normalize */
   font-weight: 500;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
   cursor: pointer;
   text-transform: uppercase;
 }
@@ -13914,7 +13899,7 @@ be a descendant of the grid when it is being dragged.
 
 .fc-day-grid-event .fc-content {
   /* force events to be one-line tall */
-  white-space: nowrap;
+  gray-dark-space: nowrap;
   overflow: hidden;
 }
 
@@ -14138,7 +14123,7 @@ a.fc-more:hover {
   /* .fc to overcome default cell styles */
   vertical-align: middle;
   padding: 0 4px;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
 }
 
 .fc-ltr .fc-axis {
@@ -14310,13 +14295,13 @@ be a descendant of the grid when it is being dragged.
 
 .fc-time-grid-event .fc-time {
   font-size: .85em;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
 }
 
 /* short mode, where time and title are on the same line */
 .fc-time-grid-event.fc-short .fc-content {
   /* don't wrap to second line (now that contents will be inline) */
-  white-space: nowrap;
+  gray-dark-space: nowrap;
 }
 
 .fc-time-grid-event.fc-short .fc-time,
@@ -14543,7 +14528,7 @@ be a descendant of the grid when it is being dragged.
 .dropzone {
   min-height: 150px;
   border: 2px dashed rgba(0, 0, 0, 0.3);
-  background: white;
+  background: gray-dark;
   padding: 20px 20px;
 }
 
@@ -14606,7 +14591,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .dropzone .dz-preview.dz-image-preview {
-  background: white;
+  background: gray-dark;
 }
 
 .dropzone .dz-preview.dz-image-preview .dz-details {
@@ -14652,7 +14637,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .dropzone .dz-preview .dz-details .dz-filename {
-  white-space: nowrap;
+  gray-dark-space: nowrap;
 }
 
 .dropzone .dz-preview .dz-details .dz-filename:hover span {
@@ -14809,7 +14794,7 @@ be a descendant of the grid when it is being dragged.
   background: -o-linear-gradient(top, #be2626, #a92222);
   background: linear-gradient(to bottom, #be2626, #a92222);
   padding: 0.5em 1.2em;
-  color: white;
+  color: gray-dark;
 }
 
 .dropzone .dz-preview .dz-error-message:after {
@@ -15018,7 +15003,6 @@ be a descendant of the grid when it is being dragged.
   display: block;
   padding: 15px;
   line-height: 20px;
-  color: #fff;
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
@@ -15221,7 +15205,7 @@ be a descendant of the grid when it is being dragged.
 
 .app-sidebar__user-name,
 .app-sidebar__user-designation {
-  white-space: nowrap;
+  gray-dark-space: nowrap;
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
@@ -15266,9 +15250,11 @@ be a descendant of the grid when it is being dragged.
           flex: 0 0 auto;
   width: 25px;
 }
-
+.ms-4{
+  margin-left: 2rem;
+}
 .app-menu__label {
-  white-space: nowrap;
+  gray-dark-space: nowrap;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -15276,7 +15262,7 @@ be a descendant of the grid when it is being dragged.
 
 .treeview.is-expanded [data-toggle='treeview'] {
   border-left-color: #009688;
-  background: #0d1214;
+  background: #cfd5e1;
 }
 
 .treeview.is-expanded .treeview-menu {
@@ -15295,7 +15281,7 @@ be a descendant of the grid when it is being dragged.
   -webkit-transition: max-height 0.3s ease;
   -o-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
-  background: #2a383e;
+  background: var(--secondary);
 }
 
 .treeview-item {
@@ -15530,7 +15516,7 @@ be a descendant of the grid when it is being dragged.
 .tile {
   position: relative;
   background-color: var(--secondary);
-  color: white;
+  color: gray-dark;
   border-radius: 3px;
   padding: 20px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
@@ -16394,7 +16380,6 @@ be a descendant of the grid when it is being dragged.
   position: relative;
   min-width: 350px;
   min-height: 390px;
-  background-color: var(--secondary);
   -webkit-box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05), 0px 29px 95px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05), 0px 29px 95px 0px rgba(0, 0, 0, 0.16);
   -webkit-perspective: 800px;
@@ -16603,7 +16588,7 @@ be a descendant of the grid when it is being dragged.
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
   max-width: 500px;
 }
 
@@ -16618,7 +16603,7 @@ be a descendant of the grid when it is being dragged.
   padding: 30px 60px;
   text-align: center;
   background-color: #fff;
-  white-space: nowrap;
+  gray-dark-space: nowrap;
   background-color: #404040;
   color: #fff;
 }
